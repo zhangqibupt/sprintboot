@@ -6,7 +6,7 @@ plugins {
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
-sourceCompatibility = "17"
+sourceCompatibility = "19"
 
 configurations {
 	compileOnly {
@@ -20,7 +20,10 @@ repositories {
 
 dependencies {
 	implementation "org.springframework.boot:spring-boot-starter"
+	implementation "org.springframework.boot:spring-boot-starter-web"
 	implementation "org.springframework.boot:spring-boot-starter-actuator"
+	implementation "com.google.code.gson:gson"
+	implementation "com.squareup.okhttp3:okhttp"
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation "org.springframework.boot:spring-boot-starter-test"
